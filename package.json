@@ -1,0 +1,27 @@
+{
+  "name": "webextension-devtools",
+  "version": "0.0.0",
+  "description": "Tools for WebExtension development.",
+  "bin": {
+    "webext-build": "bin/build.js",
+    "webext-release": "bin/release.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phts/webextension-devtools.git"
+  },
+  "keywords": [
+    "webextension",
+    "devtools"
+  ],
+  "author": "Phil Tsaryk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phts/webextension-devtools/issues"
+  },
+  "homepage": "https://github.com/phts/webextension-devtools#readme",
+  "devDependencies": {
+    "@phts/eslint-config": "^1.0.1",
+    "eslint": "^5.6.0"
+  }
+}

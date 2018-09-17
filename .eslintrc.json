@@ -1,0 +1,7 @@
+{
+  "extends": "@phts",
+  "env": {
+    "es6": true,
+    "node": true
+  }
+}
