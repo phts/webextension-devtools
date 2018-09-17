@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "description": "Tools for WebExtension development.",
   "bin": {
-    "webext-build": "bin/build.js",
-    "webext-release": "bin/release.js"
+    "webext-release": "bin/release.js",
+    "webext-xpi": "bin/xpi.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,11 @@
     "url": "https://github.com/phts/webextension-devtools/issues"
   },
   "homepage": "https://github.com/phts/webextension-devtools#readme",
+  "dependencies": {
+    "adm-zip": "^0.4.11",
+    "semver": "^5.5.1",
+    "yargs": "^12.0.2"
+  },
   "devDependencies": {
     "@phts/eslint-config": "^1.0.1",
     "eslint": "^5.6.0"
