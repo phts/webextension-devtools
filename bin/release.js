@@ -2,8 +2,9 @@
 
 'use strict'
 
+const SUPPORTED_VERSION_SHORCUTS = ['major', 'minor', 'patch']
 const argv = require('yargs')
-  .usage('Usage: $0 [options] <newversion | major | minor | patch>')
+  .usage(`Usage: $0 [options] <newversion | ${SUPPORTED_VERSION_SHORCUTS.join(' | ')}>`)
   .option('manifest', {
     alias: 'm',
     default: 'src/manifest.json',
@@ -18,9 +19,10 @@ const exec = require('child_process').execSync
 const semver = require('semver')
 
 const newVersionCommand = argv._[0]
-const isShortcut = ['major', 'minor', 'patch'].includes(newVersionCommand)
+const isShortcut = SUPPORTED_VERSION_SHORCUTS.includes(newVersionCommand)
 if (!isShortcut && !semver.valid(newVersionCommand)) {
-  throw new Error('New version should have semver format (x.y.z) or one of "major", "minor", "patch".')
+  const oneOfStr = SUPPORTED_VERSION_SHORCUTS.map(x => `"${x}"`).join(', ')
+  throw new Error(`New version should have semver format (x.y.z) or be one of ${oneOfStr}.`)
 }
 
 const hostDir = path.resolve('.')
