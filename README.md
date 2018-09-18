@@ -1,5 +1,7 @@
 # webextension-devtools
 
+[![npm](https://img.shields.io/npm/v/webextension-devtools.svg)](https://www.npmjs.com/package/webextension-devtools)
+
 Tools for WebExtension development.
 
 ## Install
