@@ -18,7 +18,7 @@ const argv = require('yargs')
 
 const path = require('path')
 const AdmZip = require('adm-zip')
-const {toDashCase} = require('../lib/utils')
+const toDashCase = require('../lib/toDashCase')
 
 const hostDir = path.resolve('.')
 const srcDir = path.join(hostDir, argv.src)
