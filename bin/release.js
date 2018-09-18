@@ -42,3 +42,4 @@ const updatedManifestContent = manifestContent.replace(versionRegExp, `$1${newVe
 fs.writeFileSync(manifestFile, updatedManifestContent)
 
 exec(`git add "${manifestFile}" && git commit -m "${newVersion}" && git tag v${newVersion}`)
+console.info(newVersion)
