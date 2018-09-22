@@ -30,7 +30,7 @@
     "yargs": "^12.0.2"
   },
   "devDependencies": {
-    "@phts/eslint-config": "^1.0.1",
+    "@phts/eslint-config": "^1.1.0",
     "eslint": "^5.6.0"
   }
 }
