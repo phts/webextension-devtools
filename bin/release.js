@@ -41,5 +41,6 @@ const newVersion = isShortcut ? semver.inc(currentVersion, newVersionCommand) : 
 const updatedManifestContent = manifestContent.replace(versionRegExp, `$1${newVersion}$3`)
 fs.writeFileSync(manifestFile, updatedManifestContent)
 
-exec(`git add "${manifestFile}" && git commit -m "${newVersion}" && git tag v${newVersion}`)
-console.info(newVersion)
+const tag = `v${newVersion}`
+exec(`git add "${manifestFile}" && git commit -m "${newVersion}" && git tag ${tag}`)
+console.info(tag)
