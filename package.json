@@ -6,6 +6,10 @@
     "webext-release": "bin/release.js",
     "webext-xpi": "bin/xpi.js"
   },
+  "scripts": {
+    "lint": "eslint .",
+    "preversion": "npm run lint"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/phts/webextension-devtools.git"
