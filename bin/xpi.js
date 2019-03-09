@@ -18,7 +18,6 @@ const argv = require('yargs')
 
 const path = require('path')
 const AdmZip = require('adm-zip')
-const toDashCase = require('../lib/toDashCase')
 
 const hostDir = path.resolve('.')
 const srcDir = path.join(hostDir, argv.src)
@@ -26,7 +25,7 @@ const distDir = path.join(hostDir, argv.dist)
 const manifestFile = path.join(srcDir, 'manifest.json')
 
 const manifest = require(manifestFile)
-const outputFilename = `${toDashCase(manifest.name)}-${manifest.version}.xpi`
+const outputFilename = `${manifest.applications.gecko.id}-${manifest.version}.xpi`
 const outputFile = path.join(distDir, outputFilename)
 
 const zip = new AdmZip()
