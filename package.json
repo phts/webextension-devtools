@@ -3,7 +3,7 @@
   "version": "0.1.3",
   "description": "Tools for WebExtension development.",
   "bin": {
-    "webext-release": "bin/release.js",
+    "webext-version": "bin/version.js",
     "webext-xpi": "bin/xpi.js"
   },
   "scripts": {

@@ -22,7 +22,7 @@ Tools for WebExtension development.
 
 This package exposes 2 binaries:
 
-* `webext-release` - Bump a new version, similar to `npm version`
+* `webext-version` - Bump a new version, similar to `npm version`
 * `webext-xpi` - Create xpi package
 
 For more usage info run these commands with `--help` option.
@@ -31,7 +31,7 @@ For more usage info run these commands with `--help` option.
 
 ```
 $ cd dir/to/my-webextension
-$ webext-release minor
+$ webext-version minor
 $ webext-xpi
 ```
 
@@ -42,7 +42,7 @@ Add the following scripts into `package.json` file:
 ```
 {
   "scripts": {
-    "release": "webext-release",
+    "release": "webext-version",
     "xpi": "webext-xpi"
   },
 }
