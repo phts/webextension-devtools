@@ -8,15 +8,15 @@ Tools for WebExtension development.
 
 **Globally**:
 
-    ```
-    $ npm i -g webextension-devtools
-    ```
+```
+$ npm i -g webextension-devtools
+```
 
 **As a local dependency**:
 
-    ```
-    $ npm i -D webextension-devtools
-    ```
+```
+$ npm i -D webextension-devtools
+```
 
 ## Usage
 
