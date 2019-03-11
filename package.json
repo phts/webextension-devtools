@@ -1,7 +1,7 @@
 {
   "name": "webextension-devtools",
   "version": "0.2.0",
-  "description": "Tools for WebExtension development.",
+  "description": "Developer tools for WebExtensions.",
   "bin": {
     "webext-version": "bin/version.js",
     "webext-xpi": "bin/xpi.js"
